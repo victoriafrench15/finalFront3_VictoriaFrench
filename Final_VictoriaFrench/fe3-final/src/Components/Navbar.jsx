@@ -15,7 +15,7 @@ const Navbar = () => {
           <li><Link to="/favs">Favoritos</Link></li>
           <li><Link to="/contact">Contacto</Link></li>
         </ul>
-
+        
         <ThemeToggleButton/>
       </div>
     </nav>
