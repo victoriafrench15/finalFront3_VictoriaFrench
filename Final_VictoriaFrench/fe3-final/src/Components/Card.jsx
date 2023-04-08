@@ -39,17 +39,17 @@ const Card = ({ dentist }) => {
 
   return (
     <div className="card">
-        {/* En cada card deberan mostrar en name - username y el id */}  
+
         <img alt="doctor" src="/images/doctor.jpg" className="img"></img>        
         <h2 className="title">{dentist.name}</h2>
         <p>{dentist.username}</p>
         <p>{dentist.id}</p>
-        {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
+
         <Link to={`/detail/${dentist.id}`} state={{dentist}} className="detailLink">
         View more details
         </Link>
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-        <button onClick={addFav} className="favButton"><img alt="fav" src="/images/estrella.png"/></button>
+        <button onClick={addFav} className="favButton"><img alt="fav" src="/images/estrella.png" className="fav-star"/></button>
         {message && <p className="addToFav">{message}</p>}
         {error && <p className="alreadyInFavs">{error}</p>}
     </div>
