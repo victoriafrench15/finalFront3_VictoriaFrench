@@ -7,7 +7,7 @@ const ThemeToggleButton = () => {
   const { theme, handleChangeTheme } = useContext(ContextProvider);
 
   return (
-    <button
+    <button className="theme-button"
       onClick={handleChangeTheme}
       style={{ background: theme.background, color: theme.font }}
     >

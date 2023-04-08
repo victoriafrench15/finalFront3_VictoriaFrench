@@ -10,7 +10,7 @@ const Detail = () => {
   // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
 
   return (
-    <div className='detail'>
+    <div className='detail container'>
         {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
         {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
         <h1 className="title">{dentist.name}</h1>

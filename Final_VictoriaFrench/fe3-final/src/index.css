@@ -12,6 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container{
+  margin-top: 4vw;
+  padding-top: 4vw;
+}
+
 .favButton{
   padding: 0px;  
   border: none;
@@ -41,9 +47,14 @@ h1{
 
 .nav{
   display: flex;
-  width: 80vw;
+  width: 100vw;
   justify-content:space-around;
   padding: 1rem;
+  border-bottom: white solid 1px;
+  position: fixed;
+  margin-bottom: 10%;
+  background-color: rgb(57, 57, 57);
+  top: 0;
 }
 
 .nav-ul{
@@ -54,12 +65,21 @@ h1{
 .nav_div li {
   list-style: none;
   display: list-item;
+}
 
+.nav-li{
+  margin-left: 4rem;
+  margin-right: 1rem;
 }
 
 nav > img{
   width: 200px;
   margin: 0;
+  width: 15rem;
+  height: 3rem;
+  background-color: white;
+  margin-left: 2%;
+
 }
 
 .nav_div{
@@ -73,7 +93,7 @@ nav button{
 }
 
 a{
-  color: #000;
+  color:white;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
@@ -83,41 +103,49 @@ a:hover{
 } 
 
 footer{
-  background-color: #0000003c;
+  background-color:rgb(57, 57, 57);
   display: flex;
   margin-top: 2rem;
-  padding: 2%;
+
+  width: 100vw;
+  margin-bottom: 0%;
+  border-top: white solid 1px;
+  bottom: 0;
 }
 
 .img_footer {
   width: 1,5rem;
   height: 1.3rem;
   color: #000;
-  padding-top: 0.7rem;
-  margin: 5px;
+  padding-top: 1.8rem;
+  margin-left: 2.5rem;
 }
 
 .footer_div1{
   display: flex;
-  width: 40%;
+  width: 50vw;
 }
 
 .footer_div2{
   display: flex;
   justify-content: right;
-  width: 40%;
+  width: 40vw;
 }
 
 .img_footer_logo{
   width: 10rem;
-  height: 3rem;
-  padding-top: 0.7rem;
+  height: 2rem;
+  background-color: white;
+  margin-left: 2%;
+  margin-top: 2rem;
 }
 
 footer div p{
-  margin-left: 4%;
+  margin-left: 15%;
+  margin-right: 2%;
   padding-top: 0.7rem;
-  font-size: 1,5rem;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .container_contact{
@@ -130,7 +158,8 @@ form{
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
+  margin-bottom: 9vw;
+  padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -217,6 +246,7 @@ tr:nth-child(even) {
   color: white;
 }
 
+
 .detail{
   justify-content: center;
   text-align: center;
@@ -269,4 +299,12 @@ tr:nth-child(even) {
   background-color: rgba(255, 0, 0, 0.447);
   padding: 2px;
   border-radius: 8px;
+}
+
+.theme-button{
+  border: rgba(0, 0, 0, 0.477) solid 1px;
+  cursor: pointer;
+  margin-left: 7%;
+  height: 2rem;
+  margin-top: 0.8rem;
 }

@@ -22,7 +22,7 @@ function App() {
 
   const localTheme = JSON.parse(localStorage.getItem('theme'));
 
-  const [theme, setTheme] = useState(localTheme ?? themes.light);
+  const [theme, setTheme] = useState(localTheme?? themes.light);
   
   const handleChangeTheme = () => {
     theme === themes.dark ? setTheme(themes.light) : setTheme(themes.dark);

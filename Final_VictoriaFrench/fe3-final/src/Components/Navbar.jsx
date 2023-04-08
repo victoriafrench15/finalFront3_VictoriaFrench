@@ -11,11 +11,11 @@ const Navbar = () => {
       <img src="/images/DH.png" alt='DH-logo'/>
       <div className="nav_div">
         <ul className='nav-ul'>
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/favs">Favoritos</Link></li>
-          <li><Link to="/contact">Contacto</Link></li>
+          <li className='nav-li'><Link to="/home">Home</Link></li>
+          <li className='nav-li'><Link to="/favs">Favoritos</Link></li>
+          <li className='nav-li'><Link to="/contact">Contacto</Link></li>
         </ul>
-        
+
         <ThemeToggleButton/>
       </div>
     </nav>
