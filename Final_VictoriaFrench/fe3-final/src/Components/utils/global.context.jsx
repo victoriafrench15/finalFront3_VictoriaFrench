@@ -1,7 +1,8 @@
 import { createContext} from "react";
 
+export const initialState = {theme: "", data: []}
 
-const ContextGlobal = createContext();
+const ContextGlobal = createContext(initialState);
 
 export default ContextGlobal;
 

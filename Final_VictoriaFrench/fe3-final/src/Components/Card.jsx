@@ -10,7 +10,6 @@ const Card = ({ dentist }) => {
   const [error, setError] = useState ('');
 
   const addFav = ()=>{
-    // Aqui iria la logica para agregar la Card en el localStorage
     const favs = {
       id: dentist.id,
       name: dentist.name,
@@ -48,7 +47,6 @@ const Card = ({ dentist }) => {
         <Link to={`/detail/${dentist.id}`} state={{dentist}} className="detailLink">
         View more details
         </Link>
-        {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         <button onClick={addFav} className="favButton"><img alt="fav" src="/images/estrella.png" className="fav-star"/></button>
         {message && <p className="addToFav">{message}</p>}
         {error && <p className="alreadyInFavs">{error}</p>}
