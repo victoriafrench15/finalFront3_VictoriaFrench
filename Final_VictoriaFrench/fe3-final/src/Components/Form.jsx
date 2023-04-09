@@ -25,11 +25,27 @@ const Form = () => {
     function validation(e) {
       e.preventDefault();
       if (isValidName && isValidEmail) {
-        setMessage(`Thanks ${name}, we will contact you as soon as possible through email`);
+        setMessage(`Thanks ${name}, we will contact you as soon as possible through your email`);
+        setTimeout(() => {
+          setMessage('');
+        }, 5000); 
       } else {
         setErrorMessage("Please verify your information");
+        setTimeout(() => {
+          setErrorMessage('');
+        }, 3000); 
       }
     }
+
+    const messageStyles = {
+      color: "green",
+      fontWeight: "bold",
+    };
+    
+    const errorStyles = {
+      color: "red",
+      fontWeight: "bold",
+    };
 
     return (
       <div>
@@ -54,8 +70,8 @@ const Form = () => {
   
           <button type="submit" className="">Send form</button>
   
-          {message && <p>{message}</p>}
-          {errorMessage && <p>{errorMessage}</p>}
+          {message && <p style={messageStyles}>{message}</p> }
+          {errorMessage && <p style={errorStyles}>{errorMessage}</p>}
         </form>
       </div>
     );

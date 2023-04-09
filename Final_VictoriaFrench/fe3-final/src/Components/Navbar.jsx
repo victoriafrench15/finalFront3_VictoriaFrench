@@ -12,8 +12,8 @@ const Navbar = () => {
       <div className="nav_div">
         <ul className='nav-ul'>
           <li className='nav-li'><Link to="/home">Home</Link></li>
-          <li className='nav-li'><Link to="/favs">Favoritos</Link></li>
-          <li className='nav-li'><Link to="/contact">Contacto</Link></li>
+          <li className='nav-li'><Link to="/favs">Favorites</Link></li>
+          <li className='nav-li'><Link to="/contact">Contact</Link></li>
         </ul>
 
         <ThemeToggleButton/>

@@ -2,15 +2,15 @@ import React from "react";
 import Card from "../Components/Card";
 import { useState, useEffect } from 'react';
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
 const Favs = () => {
+
 
   const [favs, setFavs] = useState([]);
   useEffect(() => {
     const storedFavs = JSON.parse(localStorage.getItem('favs')) || [];
     setFavs(storedFavs);
   }, []);
+
 
   return (
     <div className="container">

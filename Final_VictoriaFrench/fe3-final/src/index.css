@@ -200,7 +200,8 @@ form button:hover{
 }
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 1.5px solid rgb(193, 189, 189);
+  
 }
 
 .img{
@@ -259,7 +260,11 @@ tr:nth-child(even) {
 }
 
 .detailLink{
-  color: rgb(4, 4, 176);
+  color: rgb(139, 139, 143);
+}
+
+.detailLink:hover{
+  color: rgb(181, 181, 192);
 }
 
 .img_detail{
@@ -289,15 +294,15 @@ tr:nth-child(even) {
 
 .addToFav{
   font-size: x-small;
-  background-color: rgba(0, 128, 0, 0.384);
-  padding: 2px;
+  background-color: rgba(30, 214, 30, 0.384);
+  padding: 4px;
   border-radius: 8px;
 }
 
 .alreadyInFavs{
   font-size: x-small;
   background-color: rgba(255, 0, 0, 0.447);
-  padding: 2px;
+  padding: 4px;
   border-radius: 8px;
 }
 

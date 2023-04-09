@@ -1,8 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
 const Detail = () => {
   const location = useLocation();
   const { dentist } = location.state;
@@ -10,9 +8,7 @@ const Detail = () => {
   // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
 
   return (
-    <div className='detail container'>
-        {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
-        {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
+    <div className='detail container' >
         <h1 className="title">{dentist.name}</h1>
         <img alt="doctor" src="/images/doctor.jpg" className="img_detail"></img> 
         <div className='detail_contenedor'>
